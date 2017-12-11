@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/github-md.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/xicon">
+    <title>The Unsafe Blog</title>
+</head>
+
+<body class="markdown-body">
+
+    <header>
+        <h1>The Unsafe Blog</h1>
+        <a href="/" title="I just wish I could go home...">Go back to homepage</a>
+        <h3>Encoding</h3>
+    </header>
+
+    <article>
+        <a href="https://www.w3schools.com/tags/ref_urlencode.asp" target="_blank">https://www.w3schools.com/tags/ref_urlencode.asp</a>
+
+        <p>
+            Just like people, we all speak different languages!
+        </p>
+        <p>
+            Consider this plaintext quote:
+            
+            <blockquote>Encoding is confusing.</blockquote>            
+        </p>
+
+        <p>
+            Here's what it looks like after being encoded.            
+        </p>
+
+        <table style="width:100%">
+            <tr>
+                <th>Standard</th>
+                <th>Output</th>
+            </tr>
+            <tr>
+                <td>UTF-8</td>
+                <td>
+                    <samp>\x45\x6e\x63\x6f\x64\x69\x6e\x67\x20\x69\x73\x20\x63\x6f\x6e\x66\x75\x73\x69\x6e\x67\x2e</samp>
+                </td>
+            </tr>
+            <tr>
+                <td>Base64 (RFC 4648)</td>
+                <td>
+                    <samp>RW5jb2RpbmcgaXMgY29uZnVzaW5nLg==</samp>
+                </td>
+            </tr>
+            <tr>
+                <td>URL Encoding</td>
+                <td>Encoding%20is%20confusing%2e</td>
+            </tr>
+        </table>
+
+        <em>Poor encoding implementations can cause servers to leak sensitive data!</em>
+
+    </article>
+</body>
+
+</html>

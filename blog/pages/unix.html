@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/github-md.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/xicon">
+    <title>The Unsafe Blog</title>
+</head>
+
+<body class="markdown-body">
+
+    <header>
+        <h1>The Unsafe Blog</h1>
+        <a href="/" title="I just wish I could go home...">Go back to homepage</a>
+        <h3>5 Tips for UNIX</h3>
+    </header>
+
+    <article>
+        <p>
+            Many operating systems including Linux and Mac are modeled after the orignal UNIX OS, which was a proprietary system developed
+            by AT&amp;T in the 1970s.
+        </p>
+
+        <ul>
+            <li>
+                <code>.</code> refers to the current directory,
+                <code>..</code> refers to the parent directory.</li>
+            <li>The
+                <code>/etc</code> directory contains system configurations. See
+                <code>man hier</code> for more information.</li>
+            <!--The files <code>/etc/passwd</code> contains information about every system user,
+                and <code>/etc/shadow</code> lists all the hashed passwords.-->
+            <li>The sequence
+                <kbd>^C</kbd> (ctrl-C) sends
+                <samp>SIGINT</samp> to the foreground process, which attempts to stop it.</li>
+            <li>You can perform system administration remotely with the <code>telnet</code> or <code>ssh</code> protocols.</li>
+            <li>FTP, TFTP, and SFTP are all protocols that can be used to do file transfer (FT) from a server.</li>
+            <li>All these services sound great, but open ports introduce vulnerabilities.</li>
+        </ul>
+
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "unsafe",
+  "version": "0.0.1",
+  "description": "A crappy blog with a critical vulnerability: Linux Club week 12 competition",
+  "main": "server.js",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "github-markdown-css": "^2.9.0",
+    "ip": "^1.1.5",
+    "st": "0.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twlinux/unsafe.git"
+  },
+  "keywords": [
+    "crap"
+  ],
+  "author": "Jennings Zhang",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/twlinux/unsafe/issues"
+  },
+  "homepage": "https://github.com/twlinux/unsafe#readme"
+}
