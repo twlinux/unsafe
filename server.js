@@ -6,6 +6,7 @@ const colors = require('colors');
 var port = process.env.PORT || 1337; //default HTTP port is 80
 
 var mount = st({
+    cache: false,
     path: `${__dirname}/blog`,
     url: '/',
     index: 'index.html',
@@ -21,7 +22,7 @@ http.createServer(function (request, response) {
 
     let date = new Date();
     console.log(colors.dim(`[  ${date.getHours()}:${date.getMinutes()} ${date.getSeconds()} ]`)
-        + ` Request from: ${colors.bold(request.headers.host)} wants: ${colors.cyan(request.url)}`);
+        + ` Request from: ${colors.bold(request.connection.remoteAddress)} wants: ${colors.cyan(request.url)}`);
 }).listen(port);
 
 let url = (`http://${colors.bold(ip.address())}:${colors.cyan(port.toString())}/`);

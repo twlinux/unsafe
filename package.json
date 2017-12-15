@@ -12,6 +12,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "node server.js",
+    "prestart": "rm blog/unsafe-source.tar; repodir=${PWD##*/} && cd .. && tar -cf $repodir/blog/unsafe-source.tar $repodir/* && echo Source tarball created. && cd $repodir && unset repodir",
     "start": "node server.js"
   },
   "repository": {
