@@ -3,8 +3,9 @@ const ip = require('ip');
 const http = require('http');
 const colors = require('colors');
 
-var port = process.env.PORT || 1337; //default HTTP port is 80
+var port = process.env.PORT || 80; // default HTTP port is 80
 
+// st server settings
 var mount = st({
     cache: false,
     path: `${__dirname}/blog`,
