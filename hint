@@ -1,0 +1,8 @@
+~/hint
+
+DIRECTORY TRAVERSAL EXPLOIT
+
+st@0.2.4 is listed as a dependency in /package.json. 
+This module will resolve encoded dots in the specified URL path.
+
+The sequence `/%2e%2e/` can be appended to the URL to explore parent folders.
